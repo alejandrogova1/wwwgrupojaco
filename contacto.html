@@ -1,0 +1,180 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/Untitled-2.css" rel="stylesheet" type="text/css">
+<style>
+  body {
+	-webkit-font-smoothing: antialiased;
+	font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #232525;
+  }
+
+  #slides {
+	display: none;
+	margin-bottom:50px;
+  }
+
+  .slidesjs-navigation {
+	margin-top:3px;
+  }
+
+  .slidesjs-previous {
+	margin-right: 5px;
+	float: left;
+  }
+
+  .slidesjs-next {
+	margin-right: 5px;
+	float: left;
+  }
+
+  .slidesjs-pagination {
+	margin: 6px 0 0;
+	float: right;
+	list-style: none;
+  }
+
+  .slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+  }
+
+  .slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url(img/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+  }
+
+  .slidesjs-pagination li a.active,
+  .slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px
+  }
+
+  .slidesjs-pagination li a:hover {
+	background-position: 0 -26px
+  }
+
+  a:link,
+  a:visited {
+	color: #333
+  }
+
+  a:hover,
+  a:active {
+	color: #9e2020
+  }
+
+  .navbar {
+	overflow: hidden
+  }
+</style>
+<style>
+    #slides {
+      display: none
+    }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41259220-1', 'grupojaco.com');
+  ga('send', 'pageview');
+
+</script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+$(document).ready(function()
+{
+  $('#slides').slidesjs({
+	width: 940,
+	height: 327,
+	navigation: true,
+	start: 1,
+	play: {
+	  auto: true
+	}
+  });
+});
+</script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="header">
+    <div id="logo"><p><img src="img/logo.jpg" alt="Grupo Jaco" longdesc="http://www.grupojaco.com"></p></div>
+    <div id="menu"><p><a href="index.html">INICIO</a> <a href="nosotros.html">NOSOTROS</a> <a href="servicios.html">SERVICIOS</a> <a href="/presentacion/" target="_blank">PRESENTACION</a> <a href="/blog/">BLOG</a> <a href="contacto.html">CONTACTO</a></p></div>
+  </div>
+  <div style="clear:both"></div>
+  <div id="slides">
+    <img src="img/slide-1.jpg" alt="Grupo Jaco">
+    <img src="img/slide-2.jpg" alt="Puerto Seco Jaco">
+    <img src="img/slide-3.jpg" alt="Manzanillo, Colima">
+    <img src="img/example-slide-4.jpg" alt="Logistca 3PL">
+    <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
+    <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+  </div>
+  <div id="contact1">
+    <h1>Ubicación</h1>
+    <iframe width="390" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/ms?msa=0&amp;msid=202650313886029273913.0004dcd95375dd03f5231&amp;ie=UTF8&amp;t=m&amp;ll=19.09278,-104.282398&amp;spn=0.056776,0.066948&amp;z=13&amp;output=embed"></iframe>
+  </div>
+  <div id="contact2">
+    <h1>Contácto</h1>
+    <p>Contáctanos y en breve te daremos una respuesta, tu opinion es muy importante para nosotros</p>
+    <form id="form1" name="form1" action="contacto.php" method="post">
+    	<table width="100%">
+          <tr>
+          	<td width="35%">Nombre</td>
+            <td width="65%"><input type="text" name="nombre" id="nombre" class="control"></td>
+          </tr>
+          <tr>
+          	<td>Empresa</td>
+            <td><input type="text" name="empresa" id="empresa" class="control"></td>
+          </tr>
+          <tr>
+          	<td>Teléfono</td>
+            <td><input type="text" name="telefono" id="telefono" class="control"></td>
+          </tr>
+          <tr>
+          	<td>Correo</td>
+            <td><input type="text" name="correo" id="correo" class="control"></td>
+          </tr>
+          <tr>
+          	<td>Mensaje</td>
+            <td><textarea name="mensaje" rows="5" class="control" id="mensaje"></textarea></td>
+          </tr>
+          <tr>
+          	<td colspan="2" align="right"><input type="submit" name="button" id="button" value="Enviar"></td>
+          </tr>
+        </table>
+    </form>
+  </div>
+  <div id="footer">
+  	<p>SIGUENOS EN</p>
+    <p><a href='https://www.facebook.com/logisticajaco' title='Facebook'><img src='img/facebook.png' alt='Facebook'></a> &nbsp; <a href='https://twitter.com/ecouriostegui' title='Twitter'><img src='img/twitter.png' alt='Twitter'></a></p>
+    <p>&copy; 2013 Grupo Jaco | Todos los derechos reservados<br>
+    Av. Tapeixtles L4 M1 Z DOS, Colonia Tapeixtles. Manzanillo, Colima. CP 28239<br>
+    Tel. (314) 3367286 - 3367287 - 33 69335 - 33 69337 - 3367487</p>
+  </div>
+</div>
+</body>
+</html>
